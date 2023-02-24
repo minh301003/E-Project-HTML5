@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Compare Products</title>
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/compare.css" type="text/css">
+        <!--  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- Header Begin -->
+        <header class="header">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                <div class="header-logo">
+                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                <nav class="header-menu mobile-menu">
+                    <ul>
+                    <li class="active"><a href="./index.html">Home</a></li>
+                    <li><a href="./product_list.html">Shop</a></li>
+                    <li><a href="./contact.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Compare Section Begin -->
+        <section class="compare">
+            <div class="container">
+                <div class="col-md-9 mx-auto">
+                    <table class="table">
+                        <tr class="bg-light">
+                            <th>Select Product</th>
+                            <th width="300px">
+                                <select class="form-control" id="select1" onchange="item1(this.value)">
+                                    <option value="0">-- Select --</option>
+                                </select>
+                            </th>
+                            <th width="300px">
+                                <select class="form-control" id="select2" onchange="item2(this.value)">
+                                    <option value="0">-- Select --</option>
+                                </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>Product Image</th>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                                    id="img1" alt=" ">
+                            </td>
+                            <td>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
+                                    id="img2" alt=" ">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Product Category</th>
+                            <td id="cate1">N/A</td>
+                            <td id="cate2">N/A</td>
+                        </tr>
+                        <tr>
+                            <th>Product Price</th>
+                            <td id="price1">N/A</td>
+                            <td id="price2">N/A</td>
+                        </tr>
+                        <tr>
+                            <th>Product Description</th>
+                            <td id="desc1">N/A</td>
+                            <td id="desc2">N/A</td>
+                        </tr>
+                        <tr>
+                            <th>Product Brand</th>
+                            <td id="brand1">N/A</td>
+                            <td id="brand2">N/A</td>
+                        </tr>
+                    </table>
+        
+                </div>
+            </div>
+        </section>
+    
+        <!-- Compare Section End -->
+  
+        
+        <!-- Footer Section Begin -->
+        <footer class="footer">
+            <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <p>The customer is at the heart of our unique business model,
+                    which includes design.</p>
+                    <a href="#"><img src="img/payment.png" alt=""></a>
+                </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                <div class="footer-widget">
+                    <h6>Shopping</h6>
+                    <ul>
+                    <li><a href="#">Eyeglasses</a></li>
+                    <li><a href="#">Sunglasses</a></li>
+                    <li><a href="#">Contact Lenses</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="footer-widget">
+                    <h6>Shopping</h6>
+                    <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Payment Methods</a></li>
+                    <li><a href="#">Delivary</a></li>
+                    <li><a href="#">Return & Exchanges</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                <div class="footer-widget">
+                    <h6>NewLetter</h6>
+                    <div class="footer-newslatter">
+                    <p>Be the first to know about new arrivals, look books, sales &
+                        promos!</p>
+                    <form action="#">
+                        <input type="text" placeholder="Your email">
+                        <button type="submit"><span class="icon_mail_alt"></span></button>
+                    </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    </body>
+</html>
+
