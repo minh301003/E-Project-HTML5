@@ -20,3 +20,33 @@ function exportHTML() {
     fileDownload.click();
     document.body.removeChild(fileDownload);
 }
+
+
+// lay danh sach sp
+const listProducts = window.listProducts;
+
+function getProductId() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('id');
+}
+
+function getDetailData() {
+  const queryId = getProductId();
+  const rslt = listProducts.find(product => product.id === +queryId);
+  if (!rslt) {
+    document.body.innerHTML = `<h1>Khong thay san pham</h1>`;
+    return;
+  }
+
+  document.querySelector('#detailDataName').textContent = rslt.name;
+  document.querySelector('#detailDataDesc').textContent = rslt.detail;
+  document.querySelector('#detailDataPrice').textContent = '$' + rslt.price.origin;
+  document.querySelector('#detailDataImage').innerHTML = `<img src="` + rslt.img[0] + `" id="main_product_image " width="350">`;
+
+  for (let i = 1; i < rslt.img[i].length; i++) {
+    document.querySelector('#thumbnail').innerHTML += `<li><img onclick="changeImage(this)" src="` + rslt.img[i] + `" width="70"></li> `;
+  }
+
+}
+
+getDetailData();

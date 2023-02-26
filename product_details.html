@@ -18,7 +18,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+        <script src="./js/dumpData.js"></script>
     </head>
     <body>
         <!-- Header Begin -->
@@ -51,71 +51,31 @@
                 <div class="row g-0"> 
                     <div class="col-md-6 border-end"> 
                         <div class="d-flex flex-column justify-content-center"> 
-                            <div class="main_image"> 
-                                <img src="img/product/product-1.jpg" id="main_product_image" width="350"> 
+                            <div class="main_image" id="detailDataImage"> 
+                                
                             </div>
-                                    <div class="thumbnail_images"> 
-                                        <ul id="thumbnail">
-                                            <li><img onclick="changeImage(this)"
-                                            src="img/product/product-1.jpg"
-                                            width="70"></li> 
-                                            <li><img onclick="changeImage(this)"
-                                            src="img/product/product-1.jpg"
-                                            width="70"></li> 
-                                            <li><img onclick="changeImage(this)"
-                                            src="img/product/product-1.jpg"
-                                            width="70"></li> 
-                                            <li><img onclick="changeImage(this)"
-                                            src="img/product/product-1.jpg"
-                                            width="70"></li>  
-                                        </ul> 
-                                    </div> 
+                            <div class="thumbnail_images"> 
+                                <ul id="thumbnail">  
+                                </ul> 
+                            </div> 
                         </div>
                     </div> 
                     <div class="col-md-6"> 
                         <div class="p-3 right-side">
                             <div class="d-flex justify-content-between align-items-center"> 
-                                <h3>IIlana</h3> 
+                                <h1 id="detailDataName"></h1> 
                                 <span class="heart"><i class="fa fa-thin fa-heart"></i></span>
                             </div> 
+                            <div class="mt-2 pr-3 content d-flex gap-2"> 
+                                <h2>Price:</h2>
+                                <h3 id="detailDataPrice"></h3>
+                            </div>
                             <div class="mt-2 pr-3 content"> 
-                                <p>Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua Lorem
-                                    ipsum dolor sit amet, consectetur adipiscing
-                                    elit, sed do eiusmod tempor incididunt ut
-                                    labore et dolore magna aliqua</p> 
-                                </div>
-                            <h3>$430.99</h3> 
-                            <div class="ratings d-flex flex-row align-items-center"> 
-                                <div class="d-flex flex-row"> 
-                                    <i class="fa fa-regular fa-star"></i> 
-                                    <i class="fa fa-regular fa-star"></i>
-                                    <i class="fa fa-regular fa-star"></i>
-                                    <i class="fa fa-regular fa-star"></i>
-                                    <i class="fa fa-regular fa-star"></i>
-                                </div> 
-                                <span>441 reviews</span> 
-                            </div> 
+                                <p id="detailDataDesc"></p> 
+                            </div>
                             <div class="buttons d-flex flex-row mt-5 gap-3"> 
                                 <button class="btn btn-outline-dark">Buy Now</button> 
                                 <button class="btn btn-dark" onclick="exportHTML()">Download</button> 
-                            </div> 
-                            <div class="search-option"> 
-                                <i class="fa fa-search first-search"></i>
-                                <div class="inputs"> 
-                                    <input type="text" name="">
-                                </div> 
                             </div> 
                         </div> 
                     </div> 
@@ -123,75 +83,120 @@
             </div> 
         </div>
     </section>
-    
-        <!-- Footer Section Begin -->
-        <footer class="footer">
-            <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                    <a href="#"><img src="img/logo.png" alt=""></a>
-                    </div>
-                    <p>The customer is at the heart of our unique business model,
-                    which includes design.</p>
-                    <a href="#"><img src="img/payment.png" alt=""></a>
-                </div>
-                </div>
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                <div class="footer-widget">
-                    <h6>Shopping</h6>
-                    <ul>
-                    <li><a href="#">Eyeglasses</a></li>
-                    <li><a href="#">Sunglasses</a></li>
-                    <li><a href="#">Contact Lenses</a></li>
-                    </ul>
-                </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                <div class="footer-widget">
-                    <h6>Shopping</h6>
-                    <ul>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Payment Methods</a></li>
-                    <li><a href="#">Delivary</a></li>
-                    <li><a href="#">Return & Exchanges</a></li>
-                    </ul>
-                </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-                <div class="footer-widget">
-                    <h6>NewLetter</h6>
-                    <div class="footer-newslatter">
-                    <p>Be the first to know about new arrivals, look books, sales &
-                        promos!</p>
-                    <form action="#">
-                        <input type="text" placeholder="Your email">
-                        <button type="submit"><span class="icon_mail_alt"></span></button>
-                    </form>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </footer>
-        <!-- Footer Section End -->
 
-        <!-- Data file -->
-        <div class="hideItem" id="sourcedata">
-            <h2>Product Information</h2>
-            <img src="https://res.cloudinary.com/dmsxwwfb5/image/upload/v1580916756/buy-me-min.png" alt="product">
-            <ul>
-                <li>Product Name:</li>
-                <li>Product Description:</li>
-                <li>Product Price: </li>
-                <li>Product Brand: </li>
-                <li>Product Category: </li>
-            </ul>
+    <!-- Feedback Begin -->
+    <section class="list-brand spad">
+      <div class="container">
+        <div class="form-title">
+          <h3>Feedback</h3>
         </div>
-        <!-- End data file -->
+        <div class="gtco-testimonials">
+        <div class="d-flex owl-theme">
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1572561300743-2dd367ed0c9a?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=300" alt="">
+              <div class="card-body">
+                <h5>Ronne Galle <br />
+                  <span> Project Manager </span></h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                  impedit quo minus id quod maxime placeat ” </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1588361035994-295e21daa761?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=301&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=301" alt="">
+              <div class="card-body">
+                <h5>Missy Limana<br />
+                  <span> Engineer </span></h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                  impedit quo minus id quod maxime placeat ” </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card text-center"><img class="card-img-top" src="https://images.unsplash.com/photo-1575377222312-dd1a63a51638?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=302&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=50&w=302" alt="">
+              <div class="card-body">
+                <h5>Martha Brown<br />
+                  <span> Project Manager </span></h5>
+                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
+                  impedit quo minus id quod maxime placeat ” </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Feedback End -->
 
-    <script src="../E-Project/js/product_details.js"></script>
+    
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="footer-about">
+                <div class="footer-logo">
+                <a href="#"><img src="img/logo.png" alt=""></a>
+                </div>
+                <p>The customer is at the heart of our unique business model,
+                which includes design.</p>
+                <a href="#"><img src="img/payment.png" alt=""></a>
+            </div>
+            </div>
+            <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+            <div class="footer-widget">
+                <h6>Shopping</h6>
+                <ul>
+                <li><a href="#">Eyeglasses</a></li>
+                <li><a href="#">Sunglasses</a></li>
+                <li><a href="#">Contact Lenses</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6">
+            <div class="footer-widget">
+                <h6>Shopping</h6>
+                <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Payment Methods</a></li>
+                <li><a href="#">Delivary</a></li>
+                <li><a href="#">Return & Exchanges</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+            <div class="footer-widget">
+                <h6>NewLetter</h6>
+                <div class="footer-newslatter">
+                <p>Be the first to know about new arrivals, look books, sales &
+                    promos!</p>
+                <form action="#">
+                    <input type="text" placeholder="Your email">
+                    <button type="submit"><span class="icon_mail_alt"></span></button>
+                </form>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Data file -->
+    <div class="hideItem" id="sourcedata">
+        <h2>Product Information</h2>
+        <img src="https://res.cloudinary.com/dmsxwwfb5/image/upload/v1580916756/buy-me-min.png" alt="product">
+        <ul>
+            <li>Product Name:</li>
+            <li>Product Description:</li>
+            <li>Product Price: </li>
+            <li>Product Brand: </li>
+            <li>Product Category: </li>
+        </ul>
+    </div>
+    <!-- End data file -->
+
+    <script src="./js/product_details.js"></script>
     </body>
 </html>
 
