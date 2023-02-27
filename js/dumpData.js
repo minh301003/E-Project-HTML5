@@ -7,7 +7,6 @@ window.listProducts = [
   //   types: ['Drawing_Mirros'],
   //   price: {
   //     origin: 900000,
-  //     sale: 800000,
   //   },
   //   materials: [],
   //   detail: '',
@@ -16,11 +15,10 @@ window.listProducts = [
   {
     id: 2,
     name: 'Ray-Ban Wayfarer',
-    category: ['sunglasses Best_Seller'],
+    category: ['sunglasses'],
     types: ['sunglasses'],
     price: {
       origin: 150,
-      sale: 139,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80',
@@ -34,11 +32,10 @@ window.listProducts = [
   {
     id: 3,
     name: 'Oakley Holbrook',
-    category: ['sunglasses Best_Seller'],
+    category: ['sunglasses'],
     types: ['sunglasses'],
     price: {
-      origin: 900000,
-      sale: 800000,
+      origin: 119,
     },
     img: {
       0: 'https://images.unsplash.com/photo-1584036553516-bf83210aa16c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=680&q=80'
@@ -50,11 +47,10 @@ window.listProducts = [
   {
     id: 4,
     name: 'Maui Jim Hookipa',
-    category: ['sunglasses Best_Seller'],
+    category: ['sunglasses'],
     types: ['sunglasses'],
     price: {
       origin: 249,
-      sale: 219,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -66,11 +62,10 @@ window.listProducts = [
   {
     id: 5,
     name: 'Persol PO0649',
-    category: ['sunglasses Best_Seller'],
+    category: ['sunglasses'],
     types: ['sunglasses'],
     price: {
       origin: 287,
-      sale: 261,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -87,7 +82,6 @@ window.listProducts = [
     types: ['Bifocals'],
     price: {
       origin: 169,
-      sale: 159,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -103,7 +97,6 @@ window.listProducts = [
     types: ['Bifocals'],
     price: {
       origin: 99,
-      sale: 79,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -119,7 +112,6 @@ window.listProducts = [
     types: ['Bifocals'],
     price: {
       origin: 29,
-      sale: 25,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -135,7 +127,6 @@ window.listProducts = [
     types: ['Bifocals'],
     price: {
       origin: 48,
-      sale: 45,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -148,7 +139,7 @@ window.listProducts = [
   {
     id: 10,
     name: 'Acuvue Oasys',
-    category: ['Eyeglasses', 'Best_Seller'],
+    category: ['eyeglasses'],
     types: ['Contact_lenses'],
     price: {
       origin: 30,
@@ -163,7 +154,7 @@ window.listProducts = [
   {
     id: 11,
     name: 'Biofinity',
-    category: ['Eyeglasses', 'Best_Seller'],
+    category: ['eyeglasses'],
     types: ['Contact_lenses'],
     price: {
       origin: 40,
@@ -178,11 +169,10 @@ window.listProducts = [
   {
     id: 12,
     name: 'Dailies Total',
-    category: ['Eyeglasses'],
+    category: ['eyeglasses'],
     types: ['Contact_lenses'],
     price: {
       origin: 60,
-      sale: 54,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -194,11 +184,10 @@ window.listProducts = [
   {
     id: 13,
     name: 'Air Optix Aqua',
-    category: ['Eyeglasses'],
+    category: ['eyeglasses'],
     types: ['Contact_lenses'],
     price: {
       origin: 35,
-      sale: 31,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -211,11 +200,10 @@ window.listProducts = [
   {
     id: 14,
     name: 'Warby Parker Percey',
-    category: ['Frames', 'Eyeglasses', 'Best_Seller'],
+    category: ['Frames', 'eyeglasses'],
     types: ['near_sighted_glasses'],
     price: {
       origin: 195,
-      sale: '',
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -228,11 +216,10 @@ window.listProducts = [
   {
     id: 15,
     name: 'Zenni Optical Rectangle Glasses',
-    category: ['Frames', 'Eyeglasses', 'Best_Seller'],
+    category: ['Frames', 'eyeglasses'],
     types: ['near_sighted_glasses'],
     price: {
       origin: 125,
-      sale: '',
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -244,11 +231,10 @@ window.listProducts = [
   {
     id: 16,
     name: 'EyeBuyDirect Sawyer',
-    category: ['Frames', 'Eyeglasses'],
+    category: ['Frames', 'eyeglasses'],
     types: ['near_sighted_glasses'],
     price: {
       origin: 96,
-      sale: 94,
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'
@@ -260,11 +246,10 @@ window.listProducts = [
   {
     id: 17,
     name: 'LensCrafters Prada PR10VV',
-    category: ['Frames', 'Eyeglasses'],
+    category: ['Frames', 'eyeglasses'],
     types: ['near_sighted_glasses'],
     price: {
       origin: 310,
-      sale: '',
     },
     img: {
       0 : 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80'

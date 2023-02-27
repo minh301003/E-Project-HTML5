@@ -359,13 +359,17 @@
 	color: #111111;
 }
 
+.product-item-list {
+  padding-bottom: var(--bs-gutter-x);
+}
+
 .product-item {
-	overflow: hidden;
-	margin-bottom: calc(var(--bs-gutter-x) * .5);
   border: 1px solid #f7f6f6;
-  padding: 1rem;
   border-radius: 8px;
+  height: 100%;
+	overflow: hidden;
   transition: 0.3s ease-out;
+  padding: 1rem;
 }
 
 .product-item:hover {

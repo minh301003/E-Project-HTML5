@@ -27,33 +27,26 @@ function renderListproduct(productList) {
 }
 renderListproduct(listProducts);
 
-function filterByTypes() {
-  const listData = listProducts.filter(product => product.types.includes('sunglasses'));
-  const target = document.querySelector('#productListContainer');
-  target.innerHTML = '';
-  renderListproduct(listData);
-}
-
 function getAllCheckedFilter() {
   // lay toan bo danh sach cac filter da duoc tich
-  const categoryFilterWrapper = document.querySelector('#collapseExample');
+  const categoryFilterWrapper = document.querySelector('#collapseCategory');
   const listCateChecked = [...categoryFilterWrapper.querySelectorAll('input[type=checkbox]:checked')] || [];
   const listFilterCate = listCateChecked.map(input => input.value);
 
-  const materialFilterWrapper = document.querySelector('#flush-collapseMaterial');
-  const listMaterialChecked = [...materialFilterWrapper.querySelectorAll('input[type=checkbox]:checked')] || [];
-  const listFilterMaterial = listMaterialChecked.map(input => input.value);
+  // const materialFilterWrapper = document.querySelector('#flush-collapseMaterial');
+  // const listMaterialChecked = [...materialFilterWrapper.querySelectorAll('input[type=checkbox]:checked')] || [];
+  // const listFilterMaterial = listMaterialChecked.map(input => input.value);
 
   const listData = listProducts.filter(product => {
     let validCategory = false;
     validCategory = listFilterCate.length ? product.category.some(cate => listFilterCate.includes(cate)) : true;
 
-    let validMaterial = false;
-    validMaterial = listFilterMaterial.length
-      ? product.materials.some(material => listFilterMaterial.includes(material))
-      : true;
+    // let validMaterial = false;
+    // validMaterial = listFilterMaterial.length
+    //   ? product.materials.some(material => listFilterMaterial.includes(material))
+    //   : true;
 
-    return validCategory && validMaterial;
+    return validCategory ;
   });
 
   renderListproduct(listData);

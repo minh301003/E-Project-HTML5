@@ -18,18 +18,13 @@
 
     <!--  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/8e47a4543e.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
-    <script>
-      AOS.init();
-    </script>
     <!-- Header Begin -->
     <header class="header">
       <div class="container">
@@ -42,21 +37,11 @@
           <div class="col-lg-6 col-md-6">
             <nav class="header-menu mobile-menu">
               <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./product_list.html">Shop</a></li>
-                <li><a href="./contact.html">Contacts</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./product_list.html">Product List</a></li>
+                <li  class="active"><a href="./contact.html">Contacts</a></li>
               </ul>
             </nav>
-          </div>
-          <div class="col-lg-3 col-md-3">
-            <div class="header-nav-option">
-              <a href="#" class="search-switch">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </a>
-              <a href="#"><i class="fa-regular fa-heart"></i></a>
-              <a href="#"><i class="fa-solid fa-cart-shopping"></i><span>0</span></a>
-              <div class="price">$0.00</div>
-            </div>
           </div>
         </div>
       </div>
@@ -67,7 +52,7 @@
     <section class="contact spad">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1500">
+          <div class="col-lg-6 col-md-6 fadein-left">
             <div class="contact-text">
               <div class="section-title">
                 <span>Information</span>
@@ -80,7 +65,7 @@
               <p>+84123456789</p>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6" data-aos="fade-left" data-aos-duration="1500">
+          <div class="col-lg-6 col-md-6 fadein-right fadein-right-top">
             <div class="contact-form">
               <form action="#">
                 <div class="row">
@@ -104,12 +89,14 @@
     <!-- Contact Section End -->
 
     <!-- Map Begin -->
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6327985893085!2d105.8225417157954!3d21.00735159388287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8109765ba5%3A0xd84740ece05680ee!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7p3kgbOG7o2k!5e0!3m2!1svi!2s!4v1676531304746!5m2!1svi!2s"
-        width="600" height="450" style="border:0;" allowfullscreen=""
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    <section class="spad">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6327985893085!2d105.8225417157954!3d21.00735159388287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8109765ba5%3A0xd84740ece05680ee!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7p3kgbOG7o2k!5e0!3m2!1svi!2s!4v1676531304746!5m2!1svi!2s"
+          width="600" height="450" style="border:0;" allowfullscreen=""
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
     <!-- Map End -->
 
     <!-- Footer Section Begin -->
@@ -166,4 +153,5 @@
     <!-- Footer Section End -->
   </body>
 
+  <script src="./js/main.js"></script>
 </html>
