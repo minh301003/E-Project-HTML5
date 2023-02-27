@@ -9,7 +9,7 @@ window.listProducts = [
   //     origin: 900000,
   //   },
   //   materials: [],
-  //   detail: '',
+  //   detail: '',`
   //   detailShort: '',
   // },
   {

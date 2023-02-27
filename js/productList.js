@@ -6,6 +6,7 @@ function createProductBlock(product) {
                 <div class="product-item sale">
                   <div class="product-item-pic set-bg">
                     <a href="./product_details.html?id=${product.id}"><img src="${product.img[0]}" alt=""></a>
+                    
                     <span class="label">Sale</span>
                   </div>
                   <div class="product-item-text">
