@@ -41,9 +41,10 @@ function getDetailData() {
   document.querySelector('#detailDataName').textContent = rslt.name;
   document.querySelector('#detailDataDesc').textContent = rslt.detail;
   document.querySelector('#detailDataPrice').textContent = '$' + rslt.price.origin;
-  document.querySelector('#detailDataImage').innerHTML = `<img src="` + rslt.img[0] + `" id="main_product_image " width="350">`;
+  document.querySelector('#main_product_image').src = rslt.img[0];
 
-  for (let i = 1; i < rslt.img[i].length; i++) {
+
+  for (let i = 0; i < rslt.img[i].length - 1; i++) {
     document.querySelector('#thumbnail').innerHTML += `<li><img onclick="changeImage(this)" src="` + rslt.img[i] + `" width="70"></li> `;
   }
 

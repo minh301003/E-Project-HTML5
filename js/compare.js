@@ -1,5 +1,5 @@
 const product = window.listProducts;
-for (var i = 2; i < product.length; i++) {
+for (var i = 1; i < product.length; i++) {
     document.getElementById("select1").innerHTML += `
     <option value="${i}">${product[i].name}</option>
     `;
