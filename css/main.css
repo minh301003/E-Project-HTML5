@@ -157,6 +157,10 @@ ol {
 
 /* Banner
 ------------*/
+.banner {
+  overflow: hidden;
+}
+
 .fadein-right-top {
   -webkit-transform: translateX(300px);
   transform: translateX(300px);
@@ -673,4 +677,15 @@ body {
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel button.owl-dot {
   outline: 0;
+}
+
+.carousel-item::after {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+    bottom: 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
 }

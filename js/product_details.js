@@ -22,7 +22,7 @@ function exportHTML() {
 }
 
 
-// lay danh sach sp
+
 const listProducts = window.listProducts;
 
 function getProductId() {
@@ -34,7 +34,9 @@ function getDetailData() {
   const queryId = getProductId();
   const rslt = listProducts.find(product => product.id === +queryId);
   if (!rslt) {
-    document.body.innerHTML = `<h1>Khong thay san pham</h1>`;
+    document.body.innerHTML = `<div class="alert alert-danger" role="alert">
+  Not found Product
+</div>`;
     return;
   }
 

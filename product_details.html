@@ -45,8 +45,8 @@
     </header>
     <!-- Header End -->               
   
-        <!-- Product Details Section -->
-        <section class="product_details">
+    <!-- Product Details Section -->
+    <section class="product_details" id="product-detai">
         <div class="container mt-5 mb-5"> 
             <div class="card">
                 <div class="row g-0"> 
@@ -65,14 +65,14 @@
                         <div class="p-3 right-side">
                             <div class="d-flex justify-content-between align-items-center"> 
                                 <h1 id="detailDataName"></h1> 
-                                <span class="heart"><i class="fa fa-thin fa-heart"></i></span>
                             </div> 
                             <div class="mt-2 pr-3 content d-flex gap-2"> 
                                 <h2>Price:</h2>
                                 <h3 id="detailDataPrice"></h3>
                             </div>
                             <div class="mt-2 pr-3 content"> 
-                                <p id="detailDataDesc"></p> 
+                              <h3>Description: </h3>
+                              <span id="detailDataDesc" style="font-size: 16px;"></span>
                             </div>
                             <div class="buttons d-flex flex-row mt-5 gap-3"> 
                                 <button class="btn btn-outline-dark">Buy Now</button> 
@@ -83,6 +83,10 @@
                 </div> 
             </div> 
         </div>
+    </section>
+
+    <section id="notfount">
+      
     </section>
 
     <!-- Feedback Begin -->
@@ -98,8 +102,7 @@
               <div class="card-body">
                 <h5>Ronne Galle <br />
                   <span> Project Manager </span></h5>
-                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                  impedit quo minus id quod maxime placeat ” </p>
+                <p class="card-text">“ I always wear sunglasses when I'm outside, and I've noticed a significant reduction in eye fatigue and sensitivity to light. ” </p>
               </div>
             </div>
           </div>
@@ -108,8 +111,7 @@
               <div class="card-body">
                 <h5>Missy Limana<br />
                   <span> Engineer </span></h5>
-                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                  impedit quo minus id quod maxime placeat ” </p>
+                <p class="card-text">“ I love the convenience of clip-on sunglasses that can be attached to my regular glasses. They're easy to use and don't take up much space. ” </p>
               </div>
             </div>
           </div>
@@ -118,8 +120,7 @@
               <div class="card-body">
                 <h5>Martha Brown<br />
                   <span> Project Manager </span></h5>
-                <p class="card-text">“ Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                  impedit quo minus id quod maxime placeat ” </p>
+                <p class="card-text">“ The durability of my sunglasses has really impressed me. They've lasted through many outdoor adventures and still look and function great. ” </p>
               </div>
             </div>
           </div>
@@ -148,7 +149,7 @@
                 <span class="text-muted">2d</span>
               </div>
               <div class="comment-body">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non minima ipsum at amet doloremque qui magni, placeat deserunt pariatur itaque laudantium impedit aliquam eligendi repellendus excepturi quibusdam nobis esse accusantium.
+                I recently discovered blue-light-blocking sunglasses, and they have been a game changer for me. They help reduce eye strain and improve my sleep quality by blocking the blue light emitted by digital screens.
               </div>
 
               <div class="comment-replies bg-light p-3 mt-3 rounded">
@@ -166,7 +167,7 @@
                       <span class="text-muted">2d</span>
                     </div>
                     <div class="reply-body">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      That's a great tip! Keeping sunglasses in multiple places is a smart way to ensure that you always have a pair on hand when you need them.
                     </div>
                   </div>
                 </div>
@@ -182,7 +183,7 @@
                       <span class="text-muted">1d</span>
                     </div>
                     <div class="reply-body">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore sed eos sapiente, praesentium.
+                       I completely agree about blue-light-blocking sunglasses! As someone who spends a lot of time on digital devices, I've noticed a significant improvement in my eye comfort and sleep quality since using them.
                     </div>
                   </div>
                 </div>
@@ -201,7 +202,7 @@
                 <span class="text-muted">4d</span>
               </div>
               <div class="comment-body">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto laborum in corrupti dolorum, quas delectus nobis porro accusantium molestias sequi.
+                I always make sure to keep a pair of sunglasses in my car, purse, and at home so that I never forget to protect my eyes when I'm out in the sun.
               </div>
             </div>
           </div>
@@ -278,11 +279,11 @@
     <!-- Data file -->
     <div class="hideItem" id="sourcedata">
         <h2>Product Information</h2>
-        <img src="https://res.cloudinary.com/dmsxwwfb5/image/upload/v1580916756/buy-me-min.png" alt="product">
+        <img id="main_product_image" width="350">
         <ul>
-            <li>Product Name:</li>
-            <li>Product Description:</li>
-            <li>Product Price: </li>
+            <li>Product Name: <h1 id="detailDataName"></h1></li>
+            <li>Product Description: <span id="detailDataDesc" style="font-size: 16px;"></span></li>
+            <li>Product Price: <h3 id="detailDataPrice"></h3></li>
             <li>Product Brand: </li>
             <li>Product Category: </li>
         </ul>
